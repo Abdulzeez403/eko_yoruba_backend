@@ -1,0 +1,85 @@
+# ────────────────────────────────────────────
+# Node & Express.js Essentials
+# ────────────────────────────────────────────
+
+# Dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# Logs
+logs/
+*.log
+log.txt
+debug.log
+error.log
+combined.log
+
+# Runtime files
+pids/
+*.pid
+*.seed
+*.pid.lock
+
+# Coverage
+coverage/
+*.lcov
+
+# Build outputs
+dist/
+build/
+tmp/
+temp/
+.cache/
+.next/
+out/
+
+# TypeScript
+*.tsbuildinfo
+tsconfig.tsbuildinfo
+
+# PM2 logs & dumps
+.pmx/
+.pm2/
+
+# IDE / Editor folders
+.vscode/
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Optional — if using Docker
+docker-data/
+
+# Optional — Prisma
+prisma/.cache
+
+# Optional — Firebase
+.firebase/
+
+# Optional — Expo / Metro
+.expo/
+.expo-shared/
+metro-cache/
+
+# Optional — Testing temp files
+jest/
+jest-cache/
+jest-coverage/
