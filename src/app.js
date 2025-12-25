@@ -7,17 +7,27 @@ const lessonRoutes = require("./routes/lesson.routes");
 const quizRoutes = require("./routes/quiz.routes");
 const flashcardRoutes = require("./routes/flashcard.routes");
 const profileRoutes = require("./routes/profile.routes");
+const lessonContentRoutes = require("./routes/lessonContent");
+const staffRoutes = require("./routes/staff.routes");
+const userRoutes = require("./routes/user.routes");
+const analyticsRoutes = require("./routes/analytics.routes");
+const notificationRoutes = require("./routes/notification.routes");
 
 const app = express();
 
-app.use(cors());
+app.use(cors("*"));
 app.use(express.json());
 
 // ROUTES
 app.use("/api/auth", authRoutes);
+app.use("/api/users", userRoutes);
+app.use("/api/analytics", analyticsRoutes);
+app.use("/api/notifications", notificationRoutes);
 app.use("/api/lessons", lessonRoutes);
-app.use("/api/quiz", quizRoutes);
+app.use("/api/lesson-content", lessonContentRoutes);
+app.use("/api/quizzes", quizRoutes);
 app.use("/api/flashcards", flashcardRoutes);
 app.use("/api/profile", profileRoutes);
+app.use("/api/staff", staffRoutes);
 
 module.exports = app;
